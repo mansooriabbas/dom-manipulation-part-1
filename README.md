@@ -1,7 +1,32 @@
-# Bucket List
+## Exercises on DOM Manipulation
 
-In this assignment you are going to create your bucket list but in a different way than you might be used it. It's _**forbidden**_ in this assignment to add elements, content, styling or anything else, inside your HTML document or CSS files. All of this will be handled through vanilla JavaScript.
+### Getting data from the DOM. 
 
-Go to this link and download the repo: [Bucket List](https://github.com/Lexicon-Frontend-React-2023-2024/exercise-bucket-list)
+#### In this exercise you will try and get some data from the provided recipe website.
 
-The purpose of the assignment is to learn how we can create basic, and more advanced content, solely with JavaScript.
+Use the appropriate methods and properties available to you to get the correct data from the "correct" recipe. All answers should be saved in some variable and logged to the console. If you don't know the right method or property to use, see this link for all available ones: https://www.w3schools.com/jsref/dom_obj_all.asp
+
+1. What is the name of the recipe?
+2. What HTML tag is used to display the Recipe name?
+3. What is the font size of the paragraph tag with the class _"description"_.
+4. What is the value of the `alt` atrribute on the image?
+5. What is the dimensions and the url of the image? Create an object that looks like this, and log it to the console:
+
+```js
+{
+  url: string
+  height: number,
+  width: number,
+}
+```
+
+6. How many ingredients has the paste?
+7. Which is the forth element in the list containing the ingredients for the paste?
+8. Create an an array of objects from the instructions. Each element in the array should be an object that looks like this:
+
+```js
+{
+  order: number;
+  text: instruction;
+}
+```
