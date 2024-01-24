@@ -18,9 +18,12 @@ const dimensionOfImg = {
 
 const instructionsArray = [];
 
-
-
-console.log(instructions);
+instructions.forEach((list, i) => {
+  const listItems = list.querySelectorAll("li");
+  listItems.forEach((item, indx) => {
+    instructionsArray.push({ order: `${indx + 1}`, text: `${item.innerText}` });
+  });
+});
 
 console.log(instructionsArray);
 console.log(paste);
